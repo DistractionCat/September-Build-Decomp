@@ -7,7 +7,7 @@ function player_hurt_gml_Object_obj_revolvershot_Create_0(argument0, argument1) 
     if (!collisioned)
     {
         var prevstate = argument1.state
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         argument1.xscale = (-image_xscale)
         argument1.hitxscale = (-image_xscale)
         if (prevstate == (160 << 0))
@@ -24,7 +24,7 @@ function player_hurt_gml_Object_obj_revolvershot_Create_0(argument0, argument1) 
 function parry_gml_Object_obj_revolvershot_Create_0() //parry_gml_Object_obj_revolvershot_Create_0
 {
     var prevparried = parried
-    self.SUPER_parry()
+    SUPER_parry()
     if (prevparried != parried)
     {
         image_xscale *= -1

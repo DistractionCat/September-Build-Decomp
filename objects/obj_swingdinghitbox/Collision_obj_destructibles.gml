@@ -5,7 +5,7 @@ with (other)
         instance_destroy()
     else
     {
-        var _col = collision_line((x + (35 * image_xscale)), (y + (16 * image_yscale)), _self.x, _self.y, obj_solid, false, true)
+        var _col = collision_line((x + (35 * image_xscale)), (y + (16 * image_yscale)), _x, _y, obj_solid, false, true)
         if (_col == -4)
             instance_destroy()
     }

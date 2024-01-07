@@ -1,6 +1,6 @@
 if (!parryable)
     return;
-self.parry()
+parry()
 with (other)
 {
     if (!collisioned)

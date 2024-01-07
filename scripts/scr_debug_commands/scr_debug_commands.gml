@@ -23,28 +23,28 @@ function function_overload(argument0, argument1) //function_overload
     switch (_size - 1)
     {
         case -1:
-            self.argument1()
+            argument1()
             break;
         case 0:
-            self.argument1(argument0[0])
+            argument1(argument0[0])
             break;
         case 1:
-            self.argument1(argument0[0], argument0[1])
+            argument1(argument0[0], argument0[1])
             break;
         case 2:
-            self.argument1(argument0[0], argument0[1], argument0[2])
+            argument1(argument0[0], argument0[1], argument0[2])
             break;
         case 3:
-            self.argument1(argument0[0], argument0[1], argument0[2], argument0[3])
+            argument1(argument0[0], argument0[1], argument0[2], argument0[3])
             break;
         case 4:
-            self.argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4])
+            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4])
             break;
         case 5:
-            self.argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5])
+            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5])
             break;
         case 6:
-            self.argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5], argument0[6])
+            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5], argument0[6])
             break;
     }
 
@@ -61,7 +61,7 @@ function DebugCommand(argument0, argument1, argument2, argument3) constructor //
         if (argument0 != undefined)
             function_overload(argument0, func)
         else
-            self.func()
+            func()
     }
 
 }

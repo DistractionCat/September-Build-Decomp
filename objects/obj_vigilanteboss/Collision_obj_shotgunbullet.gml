@@ -1,7 +1,7 @@
 event_inherited()
 if (state == (160 << 0))
 {
-    self.boss_hurt_noplayer(350)
+    boss_hurt_noplayer(350)
     targetstunned = 100
     hithsp = 0
     hitvsp = 0
@@ -10,7 +10,7 @@ if (state == (160 << 0))
     if (hp <= 0)
     {
         hitstate = states.normal
-        self.boss_destroy(lastplayerid)
+        boss_destroy(lastplayerid)
         hitX = floor((room_width - (room_width / 2.5)))
         lastplayerid.hitX = floor((room_width / 2.5))
         lastplayerid.sprite_index = spr_player_pistolshotend

@@ -8,7 +8,7 @@ function player_hurt_gml_Object_obj_enguardehitbox_Create_0(argument0, argument1
     {
         var _prevstate = argument1.state
         col_buffer = col_max
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         if (_prevstate == (47 << 0))
         {
             with (argument1)

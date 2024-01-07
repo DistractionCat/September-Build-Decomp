@@ -13,9 +13,9 @@ with (_boss)
         var pmovespeed = p.tauntstoredmovespeed
         var psprite = p.tauntstoredsprite
         if (object_index == obj_pizzafaceboss && phase > 1)
-            self.SUPER_boss_hurt(30, p)
+            SUPER_boss_hurt(30, p)
         else
-            self.boss_hurt(30, p)
+            boss_hurt(30, p)
         with (hb)
         {
             if (!collisioned)

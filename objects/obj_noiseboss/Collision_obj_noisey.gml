@@ -1,6 +1,6 @@
 if ((!invincible) && other.thrown)
 {
-    self.boss_hurt_noplayer(60)
+    boss_hurt_noplayer(60)
     instance_destroy(other)
     if (other.hsp != 0)
     {
@@ -8,5 +8,5 @@ if ((!invincible) && other.thrown)
         hithsp = (sign(other.hsp) * 15)
     }
     if (hp <= 0)
-        self.boss_destroy(lastplayerid)
+        boss_destroy(lastplayerid)
 }

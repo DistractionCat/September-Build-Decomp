@@ -243,7 +243,7 @@ function grid_meeting_gml_Object_obj_monstertrackingrooms_Create_0(argument0, ar
 function grid_length_x_gml_Object_obj_monstertrackingrooms_Create_0(argument0, argument1, argument2) //grid_length_x_gml_Object_obj_monstertrackingrooms_Create_0
 {
     var count = 0
-    while self.grid_meeting((argument0 + argument2), argument1)
+    while grid_meeting((argument0 + argument2), argument1)
     {
         count++
         argument0 += argument2

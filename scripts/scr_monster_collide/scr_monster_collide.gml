@@ -1,4 +1,4 @@
-var _temp_local_var_4;
+//var _temp_local_var_4;
 function scr_monster_collide() //scr_monster_collide
 {
     var _temp_local_var_4 = abs(vsp)

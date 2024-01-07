@@ -30,7 +30,7 @@ if DEBUG
         }
         if keyboard_check_pressed(vk_return)
         {
-            self.DoCommand(input_text)
+            DoCommand(input_text)
             input_text = ""
             keyboard_string = ""
             _search = 1

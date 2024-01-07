@@ -57,23 +57,23 @@ function SUPER_boss_hurt_gml_Object_obj_bosshitbox_Create_0(argument0) //SUPER_b
     if ((!collisioned) && team != argument0.team)
     {
         with (argument0)
-            self.boss_hurt_noplayer(other.dmg)
+            boss_hurt_noplayer(other.dmg)
         collisioned = 1
     }
 }
 
 function boss_hurt_gml_Object_obj_bosshitbox_Create_0(argument0) //boss_hurt_gml_Object_obj_bosshitbox_Create_0
 {
-    self.SUPER_boss_hurt(argument0)
+    SUPER_boss_hurt(argument0)
 }
 
 function parry_gml_Object_obj_bosshitbox_Create_0() //parry_gml_Object_obj_bosshitbox_Create_0
 {
-    self.SUPER_parry()
+    SUPER_parry()
 }
 
 function player_hurt_gml_Object_obj_bosshitbox_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_bosshitbox_Create_0
 {
-    self.SUPER_player_hurt(argument0, argument1)
+    SUPER_player_hurt(argument0, argument1)
 }
 

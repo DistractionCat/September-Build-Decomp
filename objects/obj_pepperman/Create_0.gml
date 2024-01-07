@@ -72,13 +72,13 @@ superattack_buffer = 0
 superattack_max = 360
 function player_destroy_gml_Object_obj_pepperman_Create_0(argument0) //player_destroy_gml_Object_obj_pepperman_Create_0
 {
-    self.SUPER_player_destroy(argument0)
+    SUPER_player_destroy(argument0)
 }
 
 function boss_destroy_gml_Object_obj_pepperman_Create_0(argument0) //boss_destroy_gml_Object_obj_pepperman_Create_0
 {
     hitstate = states.normal
-    self.SUPER_boss_destroy(argument0)
+    SUPER_boss_destroy(argument0)
     with (obj_peppermanbrick)
         instance_destroy()
     global.peppermancutscene2 = 1
@@ -98,7 +98,7 @@ function boss_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //bos
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt(argument0, argument1)
+    SUPER_boss_hurt(argument0, argument1)
     targetxscale = (-argument1.xscale)
 }
 
@@ -113,7 +113,7 @@ function boss_hurt_noplayer_gml_Object_obj_pepperman_Create_0(argument0) //boss_
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt_noplayer(argument0)
+    SUPER_boss_hurt_noplayer(argument0)
 }
 
 function player_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_pepperman_Create_0
@@ -121,7 +121,7 @@ function player_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //p
     if (argument1.state != states.backbreaker || argument1.parry_inst == -4)
     {
         var _prevstate = state
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         if (_prevstate == (153 << 0) || _prevstate == (157 << 0) || _prevstate == (83 << 0) || _prevstate == (76 << 0))
         {
             with (obj_camera)

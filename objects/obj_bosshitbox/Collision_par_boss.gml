@@ -1,1 +1,1 @@
-self.boss_hurt(other.id)
+boss_hurt(other.id)

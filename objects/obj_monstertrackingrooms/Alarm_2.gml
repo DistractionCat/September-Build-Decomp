@@ -9,4 +9,4 @@ if (player_posX != -1 && player_posY != -1 && player_posY == puppet_pos.y && sou
     monster_room[2] = ds_grid_get(room_grid, monster_pos[2].x, monster_pos[2].y)
 }
 if (monster_room[2] == room_get_name(room))
-    self.puppet_create(1, 0)
+    puppet_create(1, 0)

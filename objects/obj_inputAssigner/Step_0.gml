@@ -26,7 +26,7 @@ if (!deactivated)
             _index = scr_button_pressed(i)
             if (_index != -2)
             {
-                if ((!self.CheckUsedIndex(_index)) || (_index == -1 && player_input_device[0] == -1 && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN))))
+                if ((!CheckUsedIndex(_index)) || (_index == -1 && player_input_device[0] == -1 && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN))))
                 {
                     var _y = 0
                     while (_y < 2)
@@ -86,7 +86,7 @@ else
         _index = scr_button_pressed(i)
         if (_index != -2)
         {
-            if ((!self.CheckUsedIndex(_index)) || (device_to_reconnect == 1 && _index == -1 && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN))))
+            if ((!CheckUsedIndex(_index)) || (device_to_reconnect == 1 && _index == -1 && (keyboard_check_pressed(global.key_jumpN) || keyboard_check_pressed(global.key_startN))))
             {
                 device_selected[device_to_reconnect] = 1
                 player_input_device[device_to_reconnect] = _index

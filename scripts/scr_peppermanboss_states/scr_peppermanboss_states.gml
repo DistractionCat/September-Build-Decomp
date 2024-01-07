@@ -582,7 +582,7 @@ function boss_pepperman_fistmatch() //boss_pepperman_fistmatch
                     if (other.hp <= 0)
                     {
                         with (other)
-                            self.boss_destroy(lastplayerid)
+                            boss_destroy(lastplayerid)
                     }
                 }
             }

@@ -8,7 +8,7 @@ if ((!attacking) && (!invincible) && lungehurt)
             ds_list_add(hitlist, other.id)
             with (other)
             {
-                self.boss_hurt(15, p)
+                boss_hurt(15, p)
                 hithsp = (((other.x + (((other.movespeed + 0.5) * 70) * other.xscale)) - x) / 60)
                 hitvsp = (((other.y - 180) - y) / 60)
                 hit_connected = 1

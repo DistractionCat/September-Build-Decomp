@@ -89,7 +89,7 @@ targetstunnedminus[4] = 30
 targetstunnedminus[5] = 30
 function boss_destroy_gml_Object_obj_vigilanteboss_Create_0(argument0) //boss_destroy_gml_Object_obj_vigilanteboss_Create_0
 {
-    self.SUPER_boss_destroy(argument0)
+    SUPER_boss_destroy(argument0)
     targetstunned = 1000
     stunned = 1000
     global.vigilantecutscene2 = 1
@@ -107,7 +107,7 @@ function boss_hurt_gml_Object_obj_vigilanteboss_Create_0(argument0, argument1) /
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt(argument0, argument1)
+    SUPER_boss_hurt(argument0, argument1)
     targetxscale = (-argument1.xscale)
 }
 
@@ -122,7 +122,7 @@ function boss_hurt_noplayer_gml_Object_obj_vigilanteboss_Create_0(argument0) //b
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt_noplayer(argument0)
+    SUPER_boss_hurt_noplayer(argument0)
 }
 
 function player_hurt_gml_Object_obj_vigilanteboss_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_vigilanteboss_Create_0
@@ -134,7 +134,7 @@ function player_hurt_gml_Object_obj_vigilanteboss_Create_0(argument0, argument1)
         hitvsp = vsp
         if (state != states.uppunch || vsp < 0)
         {
-            self.SUPER_player_hurt(argument0, argument1)
+            SUPER_player_hurt(argument0, argument1)
             with (argument1)
             {
                 inv_frames = 1

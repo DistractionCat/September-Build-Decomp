@@ -75,10 +75,8 @@ function secret_open_portal(argument0) //secret_open_portal
     }
 }
 
-function secret_close_portal(argument0, argument1) //secret_close_portal
+function secret_close_portal(argument0, argument1=0) //secret_close_portal
 {
-    if (argument1 == undefined)
-        argument1 = 0
     with (obj_secretportal)
     {
         if (trigger == argument0 && sprite_index != spr_pizzaportalend && sprite_index != spr_pizzaportal_disappear)

@@ -55,12 +55,8 @@ function create_collect(argument0, argument1, argument2) //create_collect
     return q;
 }
 
-function create_particle(argument0, argument1, argument2, argument3) //create_particle
+function create_particle(argument0, argument1, argument2, argument3=0) //create_particle
 {
-    if (argument3 == undefined)
-        argument3 = 0
-    if (argument3 == undefined)
-        argument3 = 0
     var _depth = ds_map_find_value(global.part_depth, argument2)
     if is_undefined(_depth)
         _depth = object_get_depth(object_index)

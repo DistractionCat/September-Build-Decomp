@@ -11,7 +11,7 @@ if (!attacking)
             lastplayerid = _player
             invincible = 1
             inv_timer = inv_max
-            self.boss_hurt(s, _player)
+            boss_hurt(s, _player)
         }
     }
 }
@@ -20,7 +20,7 @@ else
     var sb = ds_map_find_value(boss_hurtstates, state)
     if ((!is_undefined(sb)) && state != states.chainsaw && state != states.stun)
     {
-        self.player_hurt(sb, _player)
+        player_hurt(sb, _player)
         lastplayerid = _player
     }
 }

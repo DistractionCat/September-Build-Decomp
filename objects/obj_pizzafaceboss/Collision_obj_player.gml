@@ -5,7 +5,7 @@ if (phase == 0 && attacking)
         if (other.state == states.backbreaker && other.parry_inst != -4)
         {
             state = states.normal
-            self.boss_hurt(10, other.id)
+            boss_hurt(10, other.id)
             stunned = 50
             with (other)
             {
@@ -60,13 +60,13 @@ if (phase == 0 && attacking)
         else
         {
             state = states.normal
-            self.player_hurt(20, other.id)
+            player_hurt(20, other.id)
         }
     }
     else
     {
         state = states.normal
-        self.player_hurt(20, other.id)
+        player_hurt(20, other.id)
     }
 }
 else if (phase > 0)

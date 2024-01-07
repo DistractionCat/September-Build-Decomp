@@ -60,7 +60,7 @@ targetstunnedminus[5] = 30
 targetstunnedminus[6] = 30
 function boss_destroy_gml_Object_obj_mrstickboss_Create_0(argument0) //boss_destroy_gml_Object_obj_mrstickboss_Create_0
 {
-    self.SUPER_boss_destroy(argument0)
+    SUPER_boss_destroy(argument0)
     targetstunned = 1000
     stunned = 1000
     global.mrstickcutscene3 = 1
@@ -78,7 +78,7 @@ function boss_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) //b
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt(argument0, argument1)
+    SUPER_boss_hurt(argument0, argument1)
     targetxscale = (-argument1.xscale)
 }
 
@@ -93,7 +93,7 @@ function boss_hurt_noplayer_gml_Object_obj_mrstickboss_Create_0(argument0) //bos
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt_noplayer(argument0)
+    SUPER_boss_hurt_noplayer(argument0)
 }
 
 function player_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_mrstickboss_Create_0
@@ -103,7 +103,7 @@ function player_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) /
         hitstate = state
         hithsp = hsp
         hitvsp = vsp
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         with (argument1)
         {
             inv_frames = 1

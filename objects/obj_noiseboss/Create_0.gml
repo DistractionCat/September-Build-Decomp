@@ -108,7 +108,7 @@ targetstunnedminus[7] = 30
 targetstunnedminus[8] = 30
 function boss_destroy_gml_Object_obj_noiseboss_Create_0(argument0) //boss_destroy_gml_Object_obj_noiseboss_Create_0
 {
-    self.SUPER_boss_destroy(argument0)
+    SUPER_boss_destroy(argument0)
     targetstunned = 1000
     stunned = 1000
     if fakedeath
@@ -144,7 +144,7 @@ function boss_hurt_gml_Object_obj_noiseboss_Create_0(argument0, argument1) //bos
     else
         targetstunned = 150
     var ps = state
-    self.SUPER_boss_hurt(argument0, argument1)
+    SUPER_boss_hurt(argument0, argument1)
     if (ps == (58 << 0))
         movespeed = 0
     targetxscale = (-argument1.xscale)
@@ -161,7 +161,7 @@ function boss_hurt_noplayer_gml_Object_obj_noiseboss_Create_0(argument0) //boss_
     }
     else
         targetstunned = 150
-    self.SUPER_boss_hurt_noplayer(argument0)
+    SUPER_boss_hurt_noplayer(argument0)
 }
 
 function player_hurt_gml_Object_obj_noiseboss_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_noiseboss_Create_0
@@ -171,7 +171,7 @@ function player_hurt_gml_Object_obj_noiseboss_Create_0(argument0, argument1) //p
         hitstate = state
         hithsp = hsp
         hitvsp = vsp
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         with (argument1)
         {
             inv_frames = 1

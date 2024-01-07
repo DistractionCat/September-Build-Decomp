@@ -3,7 +3,7 @@
 /// @desc Initializes Collision Variables. To be used in Create Event.
 function scr_collision_init() {
 
-	usesCollision = true;
+	//usesCollision = true;
 	grounded = false;
 	groundedSlope = false;	
 	terminalVelocity = 20;

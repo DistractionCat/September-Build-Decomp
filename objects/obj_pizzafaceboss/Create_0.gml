@@ -29,15 +29,15 @@ bombgrabID = -4
 knightbuffer = 0
 spawnpool = [obj_forknight, obj_cheeseslime]
 hitplayer = 0
-function player_hurt_gml_Object_obj_pizzafaceboss_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_pizzafaceboss_Create_0
+function player_hurt(argument0, argument1) //player_hurt_gml_Object_obj_pizzafaceboss_Create_0
 {
     var _prevstate = state
     if (phase < 2)
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
     else if ((argument1.state != states.backbreaker || argument1.parry_inst == -4) && argument1.state != states.parry && ds_list_find_index(hitlist, argument1) == -1)
     {
         ds_list_add(hitlist, argument1)
-        self.SUPER_player_hurt(argument0, argument1)
+        SUPER_player_hurt(argument0, argument1)
         state = _prevstate
         hitplayer = 1
     }
@@ -46,7 +46,7 @@ function player_hurt_gml_Object_obj_pizzafaceboss_Create_0(argument0, argument1)
 function boss_hurt_gml_Object_obj_pizzafaceboss_Create_0(argument0, argument1) //boss_hurt_gml_Object_obj_pizzafaceboss_Create_0
 {
     if (phase == 0)
-        self.SUPER_boss_hurt(argument0, argument1)
+        SUPER_boss_hurt(argument0, argument1)
     else
     {
         var _removehp = 1

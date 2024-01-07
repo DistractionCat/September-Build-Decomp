@@ -4,7 +4,7 @@ if (obj_bosscontroller.state == states.arenaintro)
 if (hp <= 0 && state != (145 << 0) && state != (162 << 0))
 {
     if ((!thrown) && (!destroyable))
-        self.boss_destroy(lastplayerid)
+        boss_destroy(lastplayerid)
 }
 image_speed = 0.35
 if (knightbuffer > 0)
@@ -29,7 +29,7 @@ switch state
         break;
     case states.normal:
         grav = 0.5
-        self.normal_func()
+        normal_func()
         break;
     case (226 << 0):
         grav = 0.5

@@ -2,7 +2,7 @@ targetplayer = (global.coop ? instance_nearest(x, y, obj_player) : obj_player1)
 if (hp <= 0 && state != (145 << 0) && state != (162 << 0))
 {
     if ((!thrown) && (!destroyable))
-        self.boss_destroy(lastplayerid)
+        boss_destroy(lastplayerid)
 }
 if ((state == states.mach1 || state == states.machslide || state == states.crouchslide || state == states.uppunch || state == states.punch || state == (166 << 0) || state == states.handstandjump) && alarm[0] <= 0)
     alarm[0] = 6
@@ -47,7 +47,7 @@ switch state
         break;
     case states.normal:
         grav = 0.5
-        self.normal_func()
+        normal_func()
         break;
     case (149 << 0):
         grav = 0.5

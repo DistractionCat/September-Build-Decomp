@@ -5,7 +5,7 @@ if (state != (216 << 0) && state != (218 << 0) && state != (217 << 0) && (!hallw
     {
         var _monsterpos = monster_pos[other.monsterid]
         var _dir = other.image_xscale
-        if self.grid_meeting((_monsterpos.x + _dir), _monsterpos.y)
+        if grid_meeting((_monsterpos.x + _dir), _monsterpos.y)
         {
             _monsterpos.x += _dir
             monster_dir[other.monsterid].x = _dir

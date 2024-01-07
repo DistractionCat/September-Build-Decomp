@@ -11,11 +11,11 @@ for (var i = 0; i < array_length(monster_room); i++)
 if (player_posX != -1 && player_posY != -1)
 {
     if (monster_room[0] == room_get_name(room) && monster_active[0])
-        self.robot_create(0, 0)
+        robot_create(0, 0)
     if (monster_room[1] == room_get_name(room) && monster_active[1])
-        self.blob_create(0, 0)
+        blob_create(0, 0)
     if (monster_room[3] == room_get_name(room) && monster_active[3])
-        self.hillbilly_create(0, 0)
+        hillbilly_create(0, 0)
     if monster_active[4]
     {
         monster_pos[4].x = player_posX

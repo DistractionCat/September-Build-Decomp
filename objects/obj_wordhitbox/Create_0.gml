@@ -9,7 +9,7 @@ parried = 0
 function parry_gml_Object_obj_wordhitbox_Create_0() //parry_gml_Object_obj_wordhitbox_Create_0
 {
     var prevparried = parried
-    self.SUPER_parry()
+    SUPER_parry()
     if (prevparried != parried)
     {
         direction *= -1

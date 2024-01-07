@@ -16,18 +16,18 @@ if (monster_active[4] && room != kidsparty_entrance1 && room != kidsparty_entran
     {
         case 0:
             monster_dir[0].x = choose(-1, 1)
-            self.robot_create(1, 0)
+            robot_create(1, 0)
             break;
         case 1:
             monster_dir[1].x = choose(-1, 1)
-            self.blob_create(1, 0)
+            blob_create(1, 0)
             break;
         case 2:
             monster_dir[2].x = choose(-1, 1)
-            self.hillbilly_create(1, 0)
+            hillbilly_create(1, 0)
             break;
         case 3:
-            self.puppet_create(1, 0)
+            puppet_create(1, 0)
             break;
     }
 

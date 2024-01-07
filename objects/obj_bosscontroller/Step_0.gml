@@ -9,11 +9,11 @@ if (player_hp <= 0)
     if (state != states.transitioncutscene && state != states.gameover)
     {
         if (endroundfunc != -4)
-            self.endroundfunc()
+            endroundfunc()
         depth = (obj_player1.depth + 1)
         state = states.transitioncutscene
         with (bossID)
-            self.player_destroy(lastplayerid)
+            player_destroy(lastplayerid)
     }
     else if (bossID.state != states.chainsaw && state != states.gameover)
     {
@@ -119,7 +119,7 @@ switch state
         else
         {
             if (startroundfunc != -4)
-                self.startroundfunc()
+                startroundfunc()
             minutes = maxminutes
             seconds = maxseconds
             alarm[0] = room_speed

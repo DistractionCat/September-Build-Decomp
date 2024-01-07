@@ -21,7 +21,7 @@ if (minutes == 0 && seconds == 0)
     instance_destroy(obj_baddiespawner)
     instance_destroy(obj_noisey)
     if (endroundfunc != -4)
-        self.endroundfunc()
+        endroundfunc()
     if (round_count < round_max)
     {
         round_count++
@@ -58,7 +58,7 @@ if (minutes == 0 && seconds == 0)
                     sprite_index = spr_player_groundedattack
                 }
                 hp = 0
-                self.boss_destroy(lastplayerid)
+                boss_destroy(lastplayerid)
             }
         }
         else

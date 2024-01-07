@@ -2,7 +2,7 @@ targetplayer = (global.coop ? instance_nearest(x, y, obj_player) : obj_player1)
 if (hp <= 0 && state != (145 << 0))
 {
     if ((!destroyed) && (!thrown) && (!destroyable))
-        self.boss_destroy(lastplayerid)
+        boss_destroy(lastplayerid)
 }
 switch state
 {

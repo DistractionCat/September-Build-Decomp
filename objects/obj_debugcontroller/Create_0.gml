@@ -25,8 +25,8 @@ if DEBUG
     {
         with (obj_debugcontroller)
         {
-            self.DoCommand("showcollisions 1")
-            self.DoCommand("player_room rm_testing4 A")
+            DoCommand("showcollisions 1")
+            DoCommand("player_room rm_testing4 A")
         }
     }
 )
@@ -70,12 +70,12 @@ if DEBUG
     {
         if (argument0 != undefined)
         {
-            argument0 = self.get_number_string(argument0)
+            argument0 = get_number_string(argument0)
             global.minutes = argument0
         }
         if (argument1 != undefined)
         {
-            argument1 = self.get_number_string(argument1)
+            argument1 = get_number_string(argument1)
             global.seconds = clamp(argument1, 0, 60)
         }
         global.panic = (!global.panic)
@@ -87,7 +87,7 @@ if DEBUG
     {
         if (argument0 == undefined)
             return;
-        argument0 = self.get_bool(argument0)
+        argument0 = get_bool(argument0)
         if (argument0 != undefined)
         {
             showcollisions = argument0
@@ -99,7 +99,7 @@ if DEBUG
     {
         if (argument0 == undefined)
             return;
-        argument0 = self.get_bool(argument0)
+        argument0 = get_bool(argument0)
         show_debug_message((!argument0))
         if (argument0 != undefined)
         {
@@ -149,7 +149,7 @@ if DEBUG
         if (argument0 == undefined)
             return;
         if (argument1 != undefined)
-            argument1 = self.get_number_string(argument1)
+            argument1 = get_number_string(argument1)
         with (obj_camera)
         {
             targetzoom = argument0
@@ -169,7 +169,7 @@ if DEBUG
     {
         if (argument0 == undefined)
             return;
-        argument0 = self.get_bool(argument0)
+        argument0 = get_bool(argument0)
         show_debug_message((!argument0))
         if (argument0 != undefined)
         {
@@ -252,7 +252,7 @@ if DEBUG
         var commands = string_split(argument0, " ")
         if (array_length(commands) > 1)
         {
-            var c = self.FindCommand(commands[1])
+            var c = FindCommand(commands[1])
             if (c != undefined)
             {
                 TextList_Add((1 << 0), argument0)
@@ -285,7 +285,7 @@ if DEBUG
         return undefined;
     }
 
-    function get_bool_gml_Object_obj_debugcontroller_Create_0(argument0) //get_bool_gml_Object_obj_debugcontroller_Create_0
+    function get_bool(argument0) //get_bool_gml_Object_obj_debugcontroller_Create_0
     {
         if (argument0 == "true")
         {

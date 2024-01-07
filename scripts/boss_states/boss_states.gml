@@ -33,7 +33,7 @@ function state_boss_walk(argument0) //state_boss_walk
         {
             if (attack_cooldown <= 0)
             {
-                self.argument0()
+                argument0()
                 if (object_index != obj_mrstickboss)
                     image_xscale = (targetplayer.x != x ? sign((targetplayer.x - x)) : targetxscale)
             }
@@ -118,7 +118,7 @@ function state_boss_taunt() //state_boss_taunt
                 image_index = 0
                 scr_soundeffect(sfx_parry)
                 taunt_buffer = 10
-                self.player_hurt(30, playerinst)
+                player_hurt(30, playerinst)
             }
         }
         if place_meeting(x, y, obj_lungehitbox)
@@ -133,7 +133,7 @@ function state_boss_taunt() //state_boss_taunt
                 image_index = 0
                 scr_soundeffect(sfx_parry)
                 taunt_buffer = 10
-                self.player_hurt(30, playerinst)
+                player_hurt(30, playerinst)
             }
         }
     }
