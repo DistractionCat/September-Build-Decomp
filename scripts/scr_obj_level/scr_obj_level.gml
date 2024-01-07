@@ -1,0 +1,41 @@
+function scr_obj_level() //scr_obj_level
+{
+    max_obj[0] = 37
+    obj_index[0][0] = 236
+    obj_index[0][2] = 432
+    obj_index[0][3] = 329
+    obj_index[0][4] = 431
+    obj_index[0][5] = 437
+    obj_index[0][6] = obj_destroyable2escape
+    obj_index[0][7] = 443
+    obj_index[0][8] = obj_destroyable2_bigescape
+    obj_index[0][9] = 438
+    obj_index[0][10] = obj_destroyable3escape
+    obj_index[0][11] = 502
+    obj_index[0][12] = 313
+    obj_index[0][14] = 519
+    obj_index[0][15] = 447
+    obj_index[0][16] = 446
+    obj_index[0][17] = 440
+    obj_index[0][18] = 477
+    obj_index[0][19] = 738
+    obj_index[0][20] = 739
+    obj_index[0][21] = 473
+    obj_index[0][22] = 460
+    obj_index[0][23] = 471
+    obj_index[0][24] = 472
+    obj_index[0][25] = 490
+    obj_index[0][26] = 741
+    obj_index[0][27] = obj_entrance_slope
+    obj_index[0][28] = obj_secret_slope
+    obj_index[0][29] = 726
+    obj_index[0][30] = obj_medieval_slope
+    obj_index[0][31] = 727
+    obj_index[0][32] = 728
+    obj_index[0][33] = 729
+    obj_index[0][34] = 730
+    obj_index[0][35] = 520
+    obj_index[0][36] = 517
+    obj_index[0][37] = 518
+}
+
