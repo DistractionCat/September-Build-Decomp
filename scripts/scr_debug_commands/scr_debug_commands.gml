@@ -17,37 +17,36 @@ function string_split(argument0, argument1) //string_split
     return _list;
 }
 
-function function_overload(argument0, argument1) //function_overload
+function function_overload(arg_array, func)
 {
-    var _size = array_length(argument0)
-    switch (_size - 1)
-    {
-        case -1:
-            argument1()
-            break;
-        case 0:
-            argument1(argument0[0])
-            break;
-        case 1:
-            argument1(argument0[0], argument0[1])
-            break;
-        case 2:
-            argument1(argument0[0], argument0[1], argument0[2])
-            break;
-        case 3:
-            argument1(argument0[0], argument0[1], argument0[2], argument0[3])
-            break;
-        case 4:
-            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4])
-            break;
-        case 5:
-            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5])
-            break;
-        case 6:
-            argument1(argument0[0], argument0[1], argument0[2], argument0[3], argument0[4], argument0[5], argument0[6])
-            break;
-    }
-
+	var _size = array_length(arg_array);
+	switch (_size - 1)
+	{
+		case -1:
+			func();
+			break;
+		case 0:
+			func(arg_array[0]);
+			break;
+		case 1:
+			func(arg_array[0], arg_array[1]);
+			break;
+		case 2:
+			func(arg_array[0], arg_array[1], arg_array[2]);
+			break;
+		case 3:
+			func(arg_array[0], arg_array[1], arg_array[2], arg_array[3]);
+			break;
+		case 4:
+			func(arg_array[0], arg_array[1], arg_array[2], arg_array[3], arg_array[4]);
+			break;
+		case 5:
+			func(arg_array[0], arg_array[1], arg_array[2], arg_array[3], arg_array[4], arg_array[5]);
+			break;
+		case 6:
+			func(arg_array[0], arg_array[1], arg_array[2], arg_array[3], arg_array[4], arg_array[5], arg_array[6]);
+			break;
+	}
 }
 
 function DebugCommand(argument0, argument1, argument2, argument3) constructor //DebugCommand

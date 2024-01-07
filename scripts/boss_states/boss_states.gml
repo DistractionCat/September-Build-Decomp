@@ -17,7 +17,7 @@ function state_boss_chainsaw() //state_boss_chainsaw
     }
 }
 
-function state_boss_walk(argument0) //state_boss_walk
+function state_boss_walk(cooldown_end_script)
 {
     image_speed = 0.35
     sprite_index = fallspr
@@ -33,7 +33,7 @@ function state_boss_walk(argument0) //state_boss_walk
         {
             if (attack_cooldown <= 0)
             {
-                argument0()
+                cooldown_end_script()
                 if (object_index != obj_mrstickboss)
                     image_xscale = (targetplayer.x != x ? sign((targetplayer.x - x)) : targetxscale)
             }
