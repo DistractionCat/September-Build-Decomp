@@ -49,4 +49,4 @@ if instance_exists(baddieID)
 	        instance_destroy(other.baddieID)
 	}
 }
-else baddieID = other
+else baddieID = other.baddieID
