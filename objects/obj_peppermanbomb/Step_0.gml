@@ -9,5 +9,5 @@ if (drop == 1)
     }
     if place_meeting(x, y, obj_hallway)
         instance_destroy()
-    scr_collision()
+    scr_collide()
 }

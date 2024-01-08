@@ -9,4 +9,4 @@ if (((!scr_slope()) && instance_place((x + sign(hsp)), y, obj_solid)) || stop_bu
         instance_create(x, y, obj_slimedebris)
     instance_destroy()
 }
-scr_collision()
+scr_collide()

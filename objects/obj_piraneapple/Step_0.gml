@@ -41,7 +41,7 @@ switch state
                 other.hitboxcreate = 1
             }
         }
-        scr_collision()
+        scr_collide()
         break;
     case states.transitioncutscene:
         flash = 0
@@ -58,7 +58,7 @@ switch state
                 state = states.walk
                 sprite_index = spr_piraneappleattack
             }
-            scr_collision()
+            scr_collide()
         }
         break;
 }

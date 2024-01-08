@@ -77,4 +77,4 @@ if (steppy == 0)
     instance_create(x, (y + 43), obj_cloudeffect)
     steppy = 20
 }
-scr_collision()
+scr_collide()

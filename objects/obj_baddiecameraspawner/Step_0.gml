@@ -15,4 +15,4 @@ if (refresh <= 0 && (!(point_in_camera_ext(x, y, view_camera[0], 100, 100))))
     }
     refresh = 50
 }
-scr_collision()
+scr_collide()

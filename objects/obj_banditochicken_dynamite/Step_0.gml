@@ -16,4 +16,4 @@ if (sprite_index == spr_dynamite && countdown < 60)
     sprite_index = spr_dynamiteabouttoexplode
 if (countdown > 0)
     countdown--
-scr_collision()
+scr_collide()

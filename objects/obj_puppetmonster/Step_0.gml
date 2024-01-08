@@ -51,7 +51,7 @@ switch state
                 sprite_index = spr_monstertomato_chase
                 if (grounded && vsp > 0)
                     substate = (141 << 0)
-                scr_collision()
+                scr_collide()
                 break;
             case (141 << 0):
                 sprite_index = spr_monstertomato_chase

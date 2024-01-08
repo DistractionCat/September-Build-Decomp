@@ -21,4 +21,4 @@ if (stationned == 0)
         hitboxcreate = 1
     }
 }
-scr_collision()
+scr_collide()

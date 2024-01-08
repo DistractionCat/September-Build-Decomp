@@ -21,7 +21,7 @@ if ((obj_noiserock.falling == 1 || obj_noiserock.hit == 1) && jumpaway == 0)
 if (sprite_index == spr_playerN_jump && floor(image_index) == (image_number - 1))
     sprite_index = spr_playerN_fall
 if (sprite_index != spr_playerN_jump && sprite_index != spr_playerN_fall)
-    scr_collision()
+    scr_collide()
 else
 {
     if (vsp < 12)

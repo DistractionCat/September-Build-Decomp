@@ -32,7 +32,7 @@ switch state
         }
         if (vsp < 12)
             vsp += grav
-        scr_collision()
+        scr_collide()
         break;
     case states.grabbed:
         grounded = 0

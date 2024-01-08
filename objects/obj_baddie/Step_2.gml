@@ -10,7 +10,7 @@ if thrown
     scr_destroy_destructibles(hsp, vsp)
 }
 if (state != states.grabbed && state != states.pummel && object_index != obj_pepbat && object_index != obj_fakesanta)
-    scr_collision()
+    scr_collide()
 if (invtime > 0)
     invtime--
 if (sprite_index == walkspr && hsp != 0 && floor(image_index) == (image_number - 1))

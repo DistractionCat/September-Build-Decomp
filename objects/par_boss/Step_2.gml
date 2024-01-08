@@ -6,7 +6,7 @@ else if (inv_timer == 0)
     invincible = 0
 }
 if colliding
-    scr_collision()
+    scr_collide()
 else
 {
     x += hsp

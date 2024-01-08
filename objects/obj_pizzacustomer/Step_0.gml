@@ -1,3 +1,3 @@
 if grounded
     hsp = 0
-scr_collision()
+scr_collide()

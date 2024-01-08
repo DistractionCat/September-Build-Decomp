@@ -10,4 +10,4 @@ if (floor(image_index) == 86)
     obj_player.image_index = 0
     obj_player.sprite_index = spr_player_bossintro
 }
-scr_collision()
+scr_collide()

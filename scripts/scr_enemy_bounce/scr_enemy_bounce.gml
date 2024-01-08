@@ -137,6 +137,6 @@ function scr_enemy_bounce() //scr_enemy_bounce
         sprite_index = idlespr
     }
     image_speed = 0.35
-    scr_collision()
+    scr_collide()
 }
 

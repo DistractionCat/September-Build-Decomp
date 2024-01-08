@@ -11,4 +11,4 @@ if (!collisioned)
         ds_list_add(global.baddietomb, [room, x, y])
     }
 }
-scr_collision()
+scr_collide()

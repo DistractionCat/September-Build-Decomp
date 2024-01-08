@@ -9,7 +9,7 @@ if (!collisioned)
         {
             hsp = 0
             vsp = 1
-            scr_collision()
+            scr_collide()
         }
     }
     collisioned = 1

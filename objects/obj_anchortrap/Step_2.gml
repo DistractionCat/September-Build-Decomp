@@ -10,7 +10,7 @@ switch state
             instance_destroy(ds_list_find_value(global.instancelist, i))
         ds_list_clear(global.instancelist)
         instance_destroy(instance_place(x, ((y + vsp) + 1), obj_metalblock))
-        scr_collision()
+        scr_collide()
         if grounded
         {
             scr_soundeffect(sfx_groundpound)

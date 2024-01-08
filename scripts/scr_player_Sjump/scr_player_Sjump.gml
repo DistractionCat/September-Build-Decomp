@@ -96,6 +96,6 @@ function scr_player_Sjump() //scr_player_Sjump
         sprite_index = spr_playerV_fall
     }
     image_speed = 0.5
-    scr_collision()
+    scr_collide()
 }
 

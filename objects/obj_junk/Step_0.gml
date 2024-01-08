@@ -226,7 +226,7 @@ if (grabbed == 1)
 if (vsp > 0 && grounded && (!(place_meeting(x, y, obj_spike))))
     hsp = 0
 if (grabbed == 0)
-    scr_collision()
+    scr_collide()
 if (place_meeting(x, y, obj_swordhitbox) && thrown == 0)
 {
     grabbed = 0

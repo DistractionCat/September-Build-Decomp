@@ -13,7 +13,7 @@ if (floor(image_index) == 31)
     if (!audio_is_playing(sfx_noisewoah))
         scr_soundeffect(sfx_noisewoah)
 }
-scr_collision()
+scr_collide()
 if (grounded && dust == 0)
 {
     dust = 1

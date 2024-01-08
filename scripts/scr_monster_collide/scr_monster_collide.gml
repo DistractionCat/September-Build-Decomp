@@ -1,75 +1,61 @@
-//var _temp_local_var_4;
-function scr_monster_collide() //scr_monster_collide
+function scr_monster_collide()
 {
-    var _temp_local_var_4 = abs(vsp)
-    if (abs(vsp) <= 0)
-    {
-    }
-    else
-    {
-        while (true)
-        {
-            if (!(scr_monster_solid(x, (y + sign(vsp)))))
-            {
-                y += sign(vsp)
-                var _temp_local_var_4 = (abs(vsp) - 1)
-                if (abs(vsp) - 1)
-                    continue
-                break;
-            }
-            else
-                vsp = 0
-        }
-    }
-    var _temp_local_var_4 = abs(hsp)
-    if (abs(hsp) <= 0)
-    {
-    }
-    else
-    {
-        while (true)
-        {
-            if (scr_monster_solid((x + sign(hsp)), y) && (!(scr_monster_solid((x + sign(hsp)), (y - 1)))))
-                y--
-            if ((!(scr_monster_solid((x + sign(hsp)), y))) && (!(scr_monster_solid((x + sign(hsp)), (y + 1)))) && scr_monster_solid((x + sign(hsp)), (y + 2)))
-                y++
-            if (!(scr_monster_solid((x + sign(hsp)), y)))
-            {
-                x += sign(hsp)
-                var _temp_local_var_4 = (abs(hsp) - 1)
-                if (abs(hsp) - 1)
-                    continue
-                break;
-            }
-            else
-                hsp = 0
-        }
-    }
-    if (vsp < 20)
-        vsp += grav
-    grounded = scr_monster_solid(x, (y + 1))
+	repeat (abs(vsp))
+	{
+		if (!scr_monster_solid(x, y + sign(vsp)))
+			y += sign(vsp);
+		else
+		{
+			vsp = 0;
+			break;
+		}
+	}
+	repeat (abs(hsp))
+	{
+		for (var k = 1; k <= 4; k++)
+		{
+			if (scr_monster_solid(x + sign(hsp), y) && !scr_monster_solid(x + sign(hsp), y - k))
+				y -= k;
+			if (!scr_monster_solid(x + sign(hsp), y) && !scr_monster_solid(x + sign(hsp), y + 1) && scr_monster_solid(x + sign(hsp), y + (k + 1)))
+				y += k;
+		}
+		if (!scr_monster_solid(x + sign(hsp), y))
+			x += sign(hsp);
+		else
+		{
+			hsp = 0;
+			break;
+		}
+	}
+	if (grav > 0)
+	{
+		if (vsp < 20)
+			vsp += grav;
+	}
+	else if (vsp > -20)
+		vsp += grav;
+	grounded = scr_monster_solid(x, y + 1);
 }
-
-function scr_monster_solid(argument0, argument1) //scr_monster_solid
+function scr_monster_solid(_x, _y)
 {
-    var old_x = x
-    var old_y = y
-    x = argument0
-    y = argument1
-    if place_meeting(x, y, obj_monstersolid)
-    {
-        x = old_x
-        y = old_y
-        return 1;
-    }
-    if check_slope(obj_monsterslope)
-    {
-        x = old_x
-        y = old_y
-        return 1;
-    }
-    x = old_x
-    y = old_y
-    return 0;
+	var old_x = x;
+	var old_y = y;
+	x = _x;
+	y = _y;
+	if (place_meeting(x, y, obj_monstersolid))
+	{
+		x = old_x;
+		y = old_y;
+		return true;
+	}
+	if (check_slope(310))
+	{
+		x = old_x;
+		y = old_y;
+		return true;
+	}
+	x = old_x;
+	y = old_y;
+	return false;
 }
-
+	

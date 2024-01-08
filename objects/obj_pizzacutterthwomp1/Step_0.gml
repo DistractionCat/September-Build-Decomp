@@ -2,4 +2,4 @@ if (y == yup)
     vsp = 1
 if (y == ydown)
     vsp = -1
-scr_collision()
+scr_collide()

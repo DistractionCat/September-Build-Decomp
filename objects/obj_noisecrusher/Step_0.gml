@@ -81,6 +81,6 @@ if (flash == 1 && alarm[2] <= 0)
     alarm[2] = (0.15 * room_speed)
 if (state != states.grabbed)
     depth = 0
-scr_collision()
+scr_collide()
 if (state != states.stun)
     thrown = 0

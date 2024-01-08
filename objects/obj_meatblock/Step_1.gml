@@ -14,4 +14,4 @@ if (hsp != 0)
     with (instance_place(x, (y - 2), obj_baddie))
         hsp_carry = other.hsp
 }
-scr_collision()
+scr_collide()

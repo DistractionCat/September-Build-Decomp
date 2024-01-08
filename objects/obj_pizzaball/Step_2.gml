@@ -1,2 +1,2 @@
 if (state != states.golf)
-    scr_collision()
+    scr_collide()

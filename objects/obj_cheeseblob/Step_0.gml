@@ -10,4 +10,4 @@ if (grounded || scr_solid((x + 1), y) || scr_solid((x - 1), y))
     }
     instance_destroy()
 }
-scr_collision()
+scr_collide()
