@@ -199,6 +199,9 @@ function state_player_jump() //state_player_jump
                 case spr_stompprep:
                     sprite_index = spr_stomp
                     break;
+                case spr_player_groundpoundjump:
+                    sprite_index = spr_fall
+                    break;
             }
 
         }
