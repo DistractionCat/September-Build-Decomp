@@ -12,7 +12,7 @@ drop = 0
 mask_index = spr_player_mask
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 var i = 0
 while scr_solid(x, y)
 {

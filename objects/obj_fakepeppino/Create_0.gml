@@ -11,7 +11,7 @@ start_x = 0
 start_y = 0
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 followqueue = ds_queue_create()
 LAG_STEPS = 50
 touched = 0

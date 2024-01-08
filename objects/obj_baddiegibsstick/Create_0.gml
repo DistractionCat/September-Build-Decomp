@@ -10,5 +10,4 @@ depth = -1
 sprite_index = choose(spr_goop, spr_goop2)
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
 scr_collision_init()

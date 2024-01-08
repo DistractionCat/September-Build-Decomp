@@ -8,4 +8,4 @@ global.panic = 0
 alarm[1] = 500
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

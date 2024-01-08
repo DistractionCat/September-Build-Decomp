@@ -25,14 +25,14 @@ jumped = 1
 grav = 0.5
 hsp = 0
 vsp = 0
-vsp_carry = 0
+scr_collision_init()
 hsp_carry = 0
 sticking = 0
 platformid = noone
 xscale = 1
 yscale = 1
 facehurt = 0
-scr_collision_init()
+
 steppy = 0
 depth = -7
 movespeed = 19

@@ -941,11 +941,11 @@ if (movespeed >= 16 && (!instance_exists(speedlineseffectid)))
 }
 scr_collision_destructibles()
 if (state != states.ghostpossess && state != states.gotoplayer && state != states.debugstate && state != states.titlescreen && state != states.tube && state != states.grabbed && state != states.door && state != states.Sjump && state != states.ejected && state != states.comingoutdoor && state != states.boulder && state != states.keyget && state != states.victory && state != states.portal && state != states.timesup && state != states.gottreasure && state != states.gameover)
-    scr_collision()
+    scr_collide_player()
 if (state == states.tube || state == states.gotoplayer || state == states.debugstate)
 {
     x += hsp
     y += vsp
 }
 if (state == states.boulder)
-    scr_collision()
+    scr_collide_player()

@@ -8,7 +8,10 @@ function scr_collision_init() {
 	groundedSlope = false;	
 	terminalVelocity = 20;
 	onMovingPlatform = noone;
-
+	
+	vsp_carry = 0
+	hsp_carry = 0
+	
 	grav = 0.5;		
 	hsp = 0;
 	vsp = 0;
@@ -111,6 +114,7 @@ function scr_collision() {
 	vsp = true_vsp;	
 	
 	// Gravity
+	if !variable_instance_exists(self, terminalVelocity) terminalVelocity = 20
 	if (vsp < terminalVelocity) {
 		vsp += grav;
 	}

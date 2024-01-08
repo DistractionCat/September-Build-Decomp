@@ -2,7 +2,7 @@ function scr_initenemy() //scr_initenemy
 {
     platformid = noone
     hsp_carry = 0
-    vsp_carry = 0
+    scr_collision_init()
     xscale = image_xscale
     yscale = image_yscale
     grav = 0.5

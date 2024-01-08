@@ -4,7 +4,7 @@ movespeed = 7
 grav = 0.5
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 depth = -8
 grounded = 0
 jumpspeed = 11

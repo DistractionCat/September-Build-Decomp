@@ -5,7 +5,7 @@ grav = 0
 grounded = 0
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 dropspotx = 0
 dropspoty = 0
 grab_xstart = x

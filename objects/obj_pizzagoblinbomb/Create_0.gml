@@ -10,7 +10,7 @@ playerid = noone
 pizzagoblin = 0
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 kickbuffer = 0
 movespeed = 0
 mask_index = spr_crouchmask

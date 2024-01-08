@@ -6,4 +6,4 @@ active = 1
 depth = 2
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

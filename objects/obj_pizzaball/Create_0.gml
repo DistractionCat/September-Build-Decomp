@@ -5,7 +5,7 @@ movespeed = 0
 slopespeed = 0
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 chair = 1
 player = obj_player1
 state = states.normal

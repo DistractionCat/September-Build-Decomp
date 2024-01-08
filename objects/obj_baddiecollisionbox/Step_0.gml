@@ -155,7 +155,7 @@ for (var i = 0; i < 2; i++)
                         image_index = 0
                     }
                     var lag = 5
-                    other.baddieID.hitLag = lag
+					variable_instance_set(other.baddieID, hitLag, lag)
                     other.baddieID.hitX = other.baddieID.x
                     other.baddieID.hitY = other.baddieID.y
                     other.baddieID.hp -= 1

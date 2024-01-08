@@ -8,4 +8,4 @@ image_xscale = 1
 alarm[0] = 1000
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

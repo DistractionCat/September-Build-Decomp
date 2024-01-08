@@ -10,4 +10,4 @@ grav = 0.5
 mask_index = spr_baddiespawner
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

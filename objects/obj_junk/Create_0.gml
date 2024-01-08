@@ -14,6 +14,5 @@ mask_index = spr_player_mask
 depth = -5
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
-thrown = 0
 scr_collision_init()
+thrown = 0

@@ -11,4 +11,4 @@ image_speed = 0.4
 depth = 1
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

@@ -8,4 +8,4 @@ grav = 0.5
 mask_index = spr_player_mask
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

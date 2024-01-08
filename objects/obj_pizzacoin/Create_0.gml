@@ -6,4 +6,4 @@ if (obj_player.character == "S")
     instance_destroy()
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()

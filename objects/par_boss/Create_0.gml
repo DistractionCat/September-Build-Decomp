@@ -1,7 +1,7 @@
 mach3destroy = 0
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 thrown = 0
 depth = 0
 hsp = 0

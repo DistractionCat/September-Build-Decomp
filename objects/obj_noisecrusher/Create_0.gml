@@ -19,7 +19,7 @@ grounded = 1
 global.bosshealth = 8
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
 idlespr = spr_noisecrusher_bounce
 stunfallspr = spr_noisecrusher_stun
 walkspr = spr_noisecrusher_bounce

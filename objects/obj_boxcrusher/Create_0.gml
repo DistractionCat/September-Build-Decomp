@@ -4,6 +4,6 @@ hsp = 0
 grav = 0
 grounded = 0
 platformid = noone
-vsp_carry = 0
+scr_collision_init()
 hsp_carry = 0
 gobackup = 0

@@ -7,4 +7,4 @@ spr_idle = spr_gnome1_idle
 spr_happy = spr_gnome1_happy
 platformid = noone
 hsp_carry = 0
-vsp_carry = 0
+scr_collision_init()
