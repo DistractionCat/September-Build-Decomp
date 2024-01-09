@@ -3073,6 +3073,7 @@
     {"id":{"name":"spr_playerN_machslideend","path":"sprites/spr_playerN_machslideend/spr_playerN_machslideend.yy",},},
     {"id":{"name":"spr_bounceplank","path":"sprites/spr_bounceplank/spr_bounceplank.yy",},},
     {"id":{"name":"spr_playerN_machslidestart","path":"sprites/spr_playerN_machslidestart/spr_playerN_machslidestart.yy",},},
+    {"id":{"name":"scr_collision_init","path":"scripts/scr_collision_init/scr_collision_init.yy",},},
     {"id":{"name":"spr_playerN_machslide","path":"sprites/spr_playerN_machslide/spr_playerN_machslide.yy",},},
     {"id":{"name":"spr_crazy","path":"sprites/spr_crazy/spr_crazy.yy",},},
     {"id":{"name":"spr_playerN_secondjump2","path":"sprites/spr_playerN_secondjump2/spr_playerN_secondjump2.yy",},},

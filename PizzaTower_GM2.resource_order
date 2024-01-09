@@ -3039,6 +3039,7 @@
     {"name":"spr_playerN_machslideend","order":3055,"path":"sprites/spr_playerN_machslideend/spr_playerN_machslideend.yy",},
     {"name":"spr_bounceplank","order":3056,"path":"sprites/spr_bounceplank/spr_bounceplank.yy",},
     {"name":"spr_playerN_machslidestart","order":3057,"path":"sprites/spr_playerN_machslidestart/spr_playerN_machslidestart.yy",},
+    {"name":"scr_collision_init","order":1899,"path":"scripts/scr_collision_init/scr_collision_init.yy",},
     {"name":"spr_playerN_machslide","order":3058,"path":"sprites/spr_playerN_machslide/spr_playerN_machslide.yy",},
     {"name":"spr_crazy","order":3059,"path":"sprites/spr_crazy/spr_crazy.yy",},
     {"name":"spr_playerN_secondjump2","order":3060,"path":"sprites/spr_playerN_secondjump2/spr_playerN_secondjump2.yy",},
