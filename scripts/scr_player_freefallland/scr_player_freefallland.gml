@@ -15,16 +15,13 @@ function scr_player_freefallland() //scr_player_freefallland
     alarm[4] = 14
     vsp = 0
     hsp = 0
-	if (key_jump2 && sprite_index != spr_machfreefall)
-    {
-		vsp = -16
-	    state = states.jump
-        sprite_index = spr_player_groundpoundjump
-    }
-    if (floor(image_index) == (image_number - 1) && sprite_index != spr_player_groundpoundjump)
+    if (floor(image_index) == (image_number - 1))
     {
         state = states.jump
-		vsp = -8
+        if key_jump2
+            vsp = -14
+        else
+            vsp = -8
         jumpstop = 1
         sprite_index = spr_machfreefall
     }
