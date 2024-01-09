@@ -9,10 +9,7 @@
     "name": "Collision",
     "path": "folders/Objects/Unown Collisions/Collision.yy",
   },
-  "parentObjectId": {
-    "name": "par_collision",
-    "path": "objects/par_collision/par_collision.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_unownSlopePlatform",
-    "path": "sprites/spr_unownSlopePlatform/spr_unownSlopePlatform.yy",
+    "name": "spr_slope2",
+    "path": "sprites/spr_slope2/spr_slope2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

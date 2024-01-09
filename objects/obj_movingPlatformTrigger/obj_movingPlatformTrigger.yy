@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_unownMovingPlatformTrigger",
-    "path": "sprites/spr_unownMovingPlatformTrigger/spr_unownMovingPlatformTrigger.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

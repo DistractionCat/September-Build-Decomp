@@ -14,3 +14,4 @@ unpickable = 0
 platformid = noone
 hsp_carry = 0
 scr_collision_init()
+thrown = 0

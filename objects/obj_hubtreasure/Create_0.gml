@@ -1,4 +1,4 @@
 got_func = -4
-spr_got = sprite_index
+sprgot = sprite_index
 playerid = noone
 got = 0

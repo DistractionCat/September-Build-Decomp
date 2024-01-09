@@ -12,10 +12,7 @@
     "name": "Collision",
     "path": "folders/Objects/Unown Collisions/Collision.yy",
   },
-  "parentObjectId": {
-    "name": "par_collision",
-    "path": "objects/par_collision/par_collision.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -34,13 +31,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"moveSpeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4","varType":1,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_unownMovingPlatform",
-    "path": "sprites/spr_unownMovingPlatform/spr_unownMovingPlatform.yy",
-  },
-  "spriteMaskId": {
-    "name": "spr_unownMovingPlatform",
-    "path": "sprites/spr_unownMovingPlatform/spr_unownMovingPlatform.yy",
-  },
+  "spriteId": null,
+  "spriteMaskId": null,
   "visible": true,
 }

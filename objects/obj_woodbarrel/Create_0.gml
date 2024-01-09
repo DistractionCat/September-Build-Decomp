@@ -10,3 +10,4 @@ playerid = obj_player1
 image_speed = 0
 mask_index = spr_player_mask
 depth = -5
+thrown = 0

@@ -4,5 +4,5 @@ spridle = 1524
 spr = spr_cheeseblob
 if (obj_player.character == "S")
     instance_destroy()
-player = obj_hardmode
+player = 0
 instance_destroy(obj_pizzaface)
