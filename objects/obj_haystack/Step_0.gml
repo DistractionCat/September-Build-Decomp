@@ -65,7 +65,7 @@ else if (sprite_index == spr_haystackburning)
                 scr_losepoints()
                 scr_soundeffect(sfx_scream3)
                 if (state != states.fireass)
-                    tv_push_prompt_once(tv_create_prompt("This is the fireass transformation text", (2 << 0), 573, 3), "fireass")
+                    tv_push_prompt_once(tv_create_prompt("This is the fireass transformation text", (2 << 0), spr_tv_fireass, 3), "fireass")
                 state = states.fireass
                 image_index = 0
                 vsp = -5

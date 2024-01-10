@@ -10,7 +10,7 @@ if (sprite_index == spr_boxcrusher_fall)
 else if (sprite_index == spr_boxcrusher_land)
 {
     if (other.state != states.boxxedpep)
-        tv_push_prompt_once(tv_create_prompt("This is the boxxed transformation text", (2 << 0), 2614, 3), "boxxedpep")
+        tv_push_prompt_once(tv_create_prompt("This is the boxxed transformation text", (2 << 0), spr_tv_boxxedpep, 3), "boxxedpep")
     other.state = states.boxxedpep
     if (other.sprite_index != other.spr_boxxedpepintro)
         other.sprite_index = other.spr_boxxedpepintro
