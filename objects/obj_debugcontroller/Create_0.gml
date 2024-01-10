@@ -236,7 +236,7 @@ if DEBUG
     ds_list_clear(search_commands)
     search_w = 0
     keyboard_string = ""
-    function FindCommand_gml_Object_obj_debugcontroller_Create_0(argument0) //FindCommand_gml_Object_obj_debugcontroller_Create_0
+    function FindCommand(argument0) //FindCommand_gml_Object_obj_debugcontroller_Create_0
     {
         for (var i = 0; i < ds_list_size(command_list); i++)
         {
@@ -247,7 +247,7 @@ if DEBUG
         return undefined;
     }
 
-    function DoCommand_gml_Object_obj_debugcontroller_Create_0(argument0) //DoCommand_gml_Object_obj_debugcontroller_Create_0
+    function DoCommand(argument0) //DoCommand_gml_Object_obj_debugcontroller_Create_0
     {
         var commands = string_split(argument0, " ")
         if (array_length(commands) > 1)
@@ -274,7 +274,7 @@ if DEBUG
         return 0;
     }
 
-    function GetDouble_gml_Object_obj_debugcontroller_Create_0(argument0) //GetDouble_gml_Object_obj_debugcontroller_Create_0
+    function GetDouble(argument0) //GetDouble_gml_Object_obj_debugcontroller_Create_0
     {
         var n = string_digits(argument0)
         if (n != undefined && n != "")
@@ -305,7 +305,7 @@ if DEBUG
         return undefined;
     }
 
-    function get_number_string_gml_Object_obj_debugcontroller_Create_0(argument0) //get_number_string_gml_Object_obj_debugcontroller_Create_0
+    function get_number_string(argument0) //get_number_string_gml_Object_obj_debugcontroller_Create_0
     {
         var n = argument0
         if is_string(argument0)
