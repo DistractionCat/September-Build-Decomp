@@ -10,7 +10,7 @@ if (global.levelcomplete && (!global.warcutscene))
 
     bombactor = noone
     planeactor = -4
-    scene_info = [[cutscene_entrance_start], [cutscene_waitfor_sprite, 246], [cutscene_player_idleanim], [cutscene_change_room, 131], [cutscene_set_player_visible, 0], [cutscene_player_float, 1], [cutscene_set_player_pos, 100, 100], [cutscene_wait, 20], [function() //anon_gml_RoomCC_hub_warpath_4_Create_591_gml_RoomCC_hub_warpath_4_Create
+    scene_info = [[cutscene_entrance_start], [cutscene_waitfor_sprite, obj_player], [cutscene_player_idleanim], [cutscene_change_room, 131], [cutscene_set_player_visible, 0], [cutscene_player_float, 1], [cutscene_set_player_pos, 100, 100], [cutscene_wait, 20], [function() //anon_gml_RoomCC_hub_warpath_4_Create_591_gml_RoomCC_hub_warpath_4_Create
     {
         planeactor = instance_create(1056, 128, obj_actor)
         planeactor.image_speed = 0.35

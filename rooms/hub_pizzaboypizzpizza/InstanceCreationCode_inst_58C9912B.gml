@@ -2,7 +2,7 @@ if (global.levelcomplete && (!global.kidspartycutscene))
 {
     currentroom = room
     mechactor = -4
-    scene_info = [[cutscene_entrance_start], [cutscene_waitfor_sprite, 246], [cutscene_player_idleanim], [cutscene_change_room, 127], [cutscene_set_player_visible, 0], [cutscene_set_player_pos, 1848, 750], [cutscene_player_float, 1], [cutscene_wait, 50], [function() //anon_gml_RoomCC_hub_pizzaboypizzpizza_3_Create_423_gml_RoomCC_hub_pizzaboypizzpizza_3_Create
+    scene_info = [[cutscene_entrance_start], [cutscene_waitfor_sprite, obj_player], [cutscene_player_idleanim], [cutscene_change_room, 127], [cutscene_set_player_visible, 0], [cutscene_set_player_pos, 1848, 750], [cutscene_player_float, 1], [cutscene_wait, 50], [function() //anon_gml_RoomCC_hub_pizzaboypizzpizza_3_Create_423_gml_RoomCC_hub_pizzaboypizzpizza_3_Create
     {
         mechactor = instance_create(1632, 416, obj_actor)
         mechactor.sprite_index = spr_pizzamech

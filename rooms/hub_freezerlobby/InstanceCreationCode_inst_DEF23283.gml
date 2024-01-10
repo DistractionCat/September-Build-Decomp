@@ -8,7 +8,7 @@ if (global.levelcomplete && (!global.freezercutscene))
     }
     currentroom = room
     dragonactor = 114140
-    scene_info = [[cutscene_medieval_start], [cutscene_waitfor_sprite, 246], [function() //anon_gml_RoomCC_hub_freezerlobby_3_Create_344_gml_RoomCC_hub_freezerlobby_3_Create
+    scene_info = [[cutscene_medieval_start], [cutscene_waitfor_sprite, obj_player], [function() //anon_gml_RoomCC_hub_freezerlobby_3_Create_344_gml_RoomCC_hub_freezerlobby_3_Create
     {
         with (obj_actor)
         {
