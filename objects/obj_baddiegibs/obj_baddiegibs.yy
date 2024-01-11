@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Baddie",
+    "path": "folders/Objects/Settings/Baddie.yy",
   },
   "parentObjectId": {
     "name": "obj_parentparticle",

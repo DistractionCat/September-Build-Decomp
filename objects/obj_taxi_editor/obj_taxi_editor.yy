@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Editor Shit",
+    "path": "folders/Objects/Editor Shit.yy",
   },
   "parentObjectId": null,
   "persistent": false,

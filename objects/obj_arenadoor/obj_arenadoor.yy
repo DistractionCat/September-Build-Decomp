@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Kung Fu",
+    "path": "folders/Objects/Level Gimmicks/Kung Fu.yy",
   },
   "parentObjectId": null,
   "persistent": false,
