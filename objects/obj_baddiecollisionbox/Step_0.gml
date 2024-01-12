@@ -155,7 +155,7 @@ for (var i = 0; i < 2; i++)
                         image_index = 0
                     }
                     var lag = 5
-					variable_instance_set(other.baddieID, hitLag, lag)
+                    other.baddieID.hitLag = lag
                     other.baddieID.hitX = other.baddieID.x
                     other.baddieID.hitY = other.baddieID.y
                     other.baddieID.hp -= 1
@@ -289,12 +289,12 @@ for (var i = 0; i < 2; i++)
                             if (other.baddieID.stunned < 100)
                                 other.baddieID.stunned = 100
                             sprite_index = spr_playerN_pogobounce
-                            break;
+                            break
                         case 1:
                             pogospeedprev = 0
                             scr_throwenemy()
                             sprite_index = spr_playerN_pogobouncemach
-                            break;
+                            break
                     }
 
                     instance_create(x, (y + 50), obj_stompeffect)
