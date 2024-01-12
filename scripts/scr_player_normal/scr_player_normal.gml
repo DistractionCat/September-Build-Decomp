@@ -291,6 +291,14 @@ function state_player_normal() //state_player_normal
                         sprite_index = spr_shotgunsuplexdash
                 }
             }
+			if (key_slap2 && key_up)
+		    {
+		        state = states.punch
+		        image_index = 0
+		        sprite_index = spr_player_breakdanceuppercut
+		        vsp = -14
+		        movespeed = hsp
+		    }
             if (global.attackstyle == 2 || global.kungfu)
             {
                 randomize_animations([spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, 580, 579, 578, spr_punch])

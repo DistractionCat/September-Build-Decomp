@@ -148,6 +148,14 @@ function state_player_jump() //state_player_jump
     }
     if key_jump
         input_buffer_jump = 0
+	if (key_slap2 && key_up)
+    {
+        state = states.punch
+        image_index = 0
+        sprite_index = spr_player_breakdanceuppercut
+        vsp = -10
+        movespeed = hsp
+    }
     if (vsp > 5 && sprite_index != spr_mortdoublejump)
         fallinganimation++
     if (fallinganimation >= 40 && fallinganimation < 80)
@@ -209,9 +217,9 @@ function state_player_jump() //state_player_jump
     {
         if (!shotgunAnim)
         {
-            sprite_index = spr_bodyslamstart
+            sprite_index = spr_player_mach2jump
             image_index = 0
-            state = states.freefallprep
+            state = states.freefall
             vsp = (character == "P" ? -5 : -7)
         }
         else
@@ -271,7 +279,7 @@ function state_player_jump() //state_player_jump
             shake_mag_acc = (30 / room_speed)
         }
     }
-    if (key_slap2 && (character == "P" || character == "N") && sprite_index != spr_suplexbump && (!shoot))
+    if (key_slap2 && (character == "P" || character == "N") && sprite_index != spr_suplexbump && sprite_index != spr_player_breakdanceuppercut && (!shoot))
     {
         if (global.attackstyle == 0 || global.attackstyle == 3)
         {

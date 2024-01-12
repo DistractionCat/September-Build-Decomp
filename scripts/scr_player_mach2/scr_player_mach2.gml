@@ -96,7 +96,7 @@ function scr_player_mach2() //scr_player_mach2
         wallspeed = movespeed
         state = states.climbwall
     }
-    if ((!grounded) && place_meeting((x + sign(hsp)), y, obj_climbablewall) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))))
+    if ((!grounded) && place_meeting((x + sign(hsp)), y, obj_solid) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))))
     {
         wallspeed = movespeed
         state = states.climbwall
@@ -142,7 +142,7 @@ function scr_player_mach2() //scr_player_mach2
         state = states.handstandjump
         movespeed = 0
     }
-    if ((!scr_slope()) && (place_meeting((x + hsp), y, obj_solid) || scr_solid_slope((x + hsp), y)) && ((!(place_meeting((x + hsp), y, obj_destructibles))) || character == "V") && (!(place_meeting((x + hsp), y, obj_climbablewall))))
+    if (grounded && (!scr_slope()) && (place_meeting((x + hsp), y, obj_solid) || scr_solid_slope((x + hsp), y)) && ((!(place_meeting((x + hsp), y, obj_destructibles))) || character == "V") && (!(place_meeting((x + hsp), y, obj_climbablewall))))
     {
         if skateboarding
             xscale *= -1

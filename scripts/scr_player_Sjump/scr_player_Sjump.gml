@@ -66,7 +66,7 @@ function scr_player_Sjump() //scr_player_Sjump
             movespeed = 12
             image_index = 0
             sprite_index = spr_player_Sjumpcancel
-            state = states.tumble
+            state = states.punch
             with (instance_create(x, y, obj_crazyruneffect))
                 image_xscale = other.xscale
         }

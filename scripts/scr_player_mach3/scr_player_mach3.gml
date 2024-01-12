@@ -136,7 +136,7 @@ function scr_player_mach3() //scr_player_mach3
                 state = states.tumble
                 vsp = 10
                 if (!grounded)
-                    sprite_index = spr_player_mach2jump
+                    sprite_index = spr_player_dive
                 else
                     sprite_index = spr_player_machroll
                 if (character == "V")
@@ -147,12 +147,12 @@ function scr_player_mach3() //scr_player_mach3
                 wallspeed = movespeed
                 state = states.climbwall
             }
-            if ((!grounded) && place_meeting((x + sign(hsp)), y, obj_climbablewall) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))))
+            if ((!grounded && (place_meeting(x + hsp, y, obj_solid) || scr_solid_slope(x + hsp, y)) && !place_meeting(x + hsp, y, obj_destructibles) && !place_meeting(x + hsp, y, obj_mach3solid) && !place_meeting(x + hsp, y, obj_metalblock)) || (grounded && (place_meeting(x + sign(hsp), y - 16, obj_solid) || scr_solid_slope(x + sign(hsp), y - 16)) && !place_meeting(x + hsp, y, obj_destructibles) && !place_meeting(x + hsp, y, obj_mach3solid) && !place_meeting(x + hsp, y, obj_metalblock) && place_meeting(x, y + 1, obj_slope)))
             {
                 wallspeed = movespeed
                 state = states.climbwall
             }
-            if (scr_solid((x + 1), y) && (!(place_meeting((x + 1), y, obj_mach3solid))) && xscale == 1 && (!scr_slope()) && (scr_solid_slope((x + sign(hsp)), y) || place_meeting((x + sign(hsp)), y, obj_solid)) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_climbablewall))))
+            if (grounded && scr_solid((x + 1), y) && (!(place_meeting((x + 1), y, obj_mach3solid))) && xscale == 1 && (!scr_slope()) && (scr_solid_slope((x + sign(hsp)), y) || place_meeting((x + sign(hsp)), y, obj_solid)) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_climbablewall))))
             {
                 var _bump = ledge_bump((vsp >= 0 ? 32 : 22))
                 if _bump

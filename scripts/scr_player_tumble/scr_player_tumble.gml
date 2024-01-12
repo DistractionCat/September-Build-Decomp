@@ -37,19 +37,19 @@ function scr_player_tumble() //scr_player_tumble
         state = states.normal
     if ((!scr_slope()) && sprite_index == spr_tumblestart && floor(image_index) < 11)
         image_index = 11
-    if (sprite_index == spr_mach2jump && grounded)
-    {
-        image_index = 0
-        sprite_index = spr_player_backslideland
-    }
-    if (sprite_index == spr_player_mach2jump && grounded)
+	if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_machroll && sprite_index != spr_player_mach4)
+	{
+	    sprite_index = spr_player_backslideland
+	    image_index = 0
+	}
+    if (sprite_index == spr_dive && grounded)
         sprite_index = spr_player_machroll
     if (sprite_index == spr_crouchslip && (!grounded))
         sprite_index = spr_player_jumpdive2
     if (sprite_index == spr_player_jumpdive2 && grounded)
         sprite_index = spr_crouchslip
     if (sprite_index == spr_player_machroll && (!grounded))
-        sprite_index = spr_player_mach2jump
+        sprite_index = spr_dive
     if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_backslideland)
         sprite_index = spr_player_backslide
     if (sprite_index == spr_player_Sjumpcancel && grounded)
