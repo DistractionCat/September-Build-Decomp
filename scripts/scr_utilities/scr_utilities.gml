@@ -1,31 +1,29 @@
-function Approach(argument0, argument1, argument2) //Approach
+function Approach(a, b, amount)
 {
-    if (argument0 < argument1)
-    {
-        argument0 += argument2
-        if (argument0 > argument1)
-            return argument1;
-    }
-    else
-    {
-        argument0 -= argument2
-        if (argument0 < argument1)
-            return argument1;
-    }
-    return argument0;
+	if (a < b)
+	{
+		a += amount;
+		if (a > b)
+			return b;
+	}
+	else
+	{
+		a -= amount;
+		if (a < b)
+			return b;
+	}
+	return a;
 }
-
-function camera_zoom(argument0, argument1) //camera_zoom
+function camera_zoom(zoom, speed)
 {
-    with (obj_camera)
-    {
-        targetzoom = argument0
-        targetzoom = clamp(targetzoom, 0, max_zoom)
-        if (argument1 != undefined)
-            zoomspd = abs(argument1)
-    }
+	with (obj_camera)
+	{
+		targetzoom = zoom;
+		targetzoom = clamp(targetzoom, 0, max_zoom);
+		if (speed != undefined)
+			zoomspd = abs(speed);
+	}
 }
-
 function camera_set_zoom(argument0) //camera_set_zoom
 {
     with (obj_camera)

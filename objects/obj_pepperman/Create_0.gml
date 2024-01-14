@@ -70,12 +70,12 @@ fist_dmg_player = 20
 superattack_hpthreshold = 500
 superattack_buffer = 0
 superattack_max = 360
-function player_destroy_gml_Object_obj_pepperman_Create_0(argument0) //player_destroy_gml_Object_obj_pepperman_Create_0
+function player_destroy(argument0) //player_destroy_gml_Object_obj_pepperman_Create_0
 {
     SUPER_player_destroy(argument0)
 }
 
-function boss_destroy_gml_Object_obj_pepperman_Create_0(argument0) //boss_destroy_gml_Object_obj_pepperman_Create_0
+function boss_destroy(argument0) //boss_destroy_gml_Object_obj_pepperman_Create_0
 {
     hitstate = states.normal
     SUPER_boss_destroy(argument0)
@@ -87,7 +87,7 @@ function boss_destroy_gml_Object_obj_pepperman_Create_0(argument0) //boss_destro
     stunned = 1000
 }
 
-function boss_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //boss_hurt_gml_Object_obj_pepperman_Create_0
+function boss_hurt(argument0, argument1) //boss_hurt_gml_Object_obj_pepperman_Create_0
 {
     if (targetstunned > 0)
     {
@@ -102,7 +102,7 @@ function boss_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //bos
     targetxscale = (-argument1.xscale)
 }
 
-function boss_hurt_noplayer_gml_Object_obj_pepperman_Create_0(argument0) //boss_hurt_noplayer_gml_Object_obj_pepperman_Create_0
+function boss_hurt_noplayer(argument0) //boss_hurt_noplayer_gml_Object_obj_pepperman_Create_0
 {
     if (targetstunned > 0)
     {
@@ -116,7 +116,7 @@ function boss_hurt_noplayer_gml_Object_obj_pepperman_Create_0(argument0) //boss_
     SUPER_boss_hurt_noplayer(argument0)
 }
 
-function player_hurt_gml_Object_obj_pepperman_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_pepperman_Create_0
+function player_hurt(argument0, argument1) //player_hurt_gml_Object_obj_pepperman_Create_0
 {
     if (argument1.state != states.backbreaker || argument1.parry_inst == -4)
     {

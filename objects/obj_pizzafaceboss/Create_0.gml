@@ -43,7 +43,7 @@ function player_hurt(argument0, argument1) //player_hurt_gml_Object_obj_pizzafac
     }
 }
 
-function boss_hurt_gml_Object_obj_pizzafaceboss_Create_0(argument0, argument1) //boss_hurt_gml_Object_obj_pizzafaceboss_Create_0
+function boss_hurt(argument0, argument1) //boss_hurt_gml_Object_obj_pizzafaceboss_Create_0
 {
     if (phase == 0)
         SUPER_boss_hurt(argument0, argument1)
@@ -74,7 +74,7 @@ function boss_hurt_gml_Object_obj_pizzafaceboss_Create_0(argument0, argument1) /
     }
 }
 
-function boss_hurt_noplayer_gml_Object_obj_pizzafaceboss_Create_0(argument0) //boss_hurt_noplayer_gml_Object_obj_pizzafaceboss_Create_0
+function boss_hurt_noplayer(argument0) //boss_hurt_noplayer_gml_Object_obj_pizzafaceboss_Create_0
 {
     if (inv_timer <= 0)
     {

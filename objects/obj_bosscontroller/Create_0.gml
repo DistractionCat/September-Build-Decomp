@@ -1,5 +1,5 @@
 depth = -999
-function get_player_hp_gml_Object_obj_bosscontroller_Create_0() //get_player_hp_gml_Object_obj_bosscontroller_Create_0
+function get_player_hp() //get_player_hp_gml_Object_obj_bosscontroller_Create_0
 {
 }
 

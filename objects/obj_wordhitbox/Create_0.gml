@@ -6,7 +6,7 @@ if global.coop
 direction = (point_direction(x, y, t.x, t.y) + irandom_range(-4, 4))
 parryable = 1
 parried = 0
-function parry_gml_Object_obj_wordhitbox_Create_0() //parry_gml_Object_obj_wordhitbox_Create_0
+function parry() //parry_gml_Object_obj_wordhitbox_Create_0
 {
     var prevparried = parried
     SUPER_parry()

@@ -278,22 +278,22 @@ function player_destroy(argument0) //player_destroy_gml_Object_par_boss_Create_0
     SUPER_player_destroy(argument0)
 }
 
-function boss_destroy_gml_Object_par_boss_Create_0(argument0) //boss_destroy_gml_Object_par_boss_Create_0
+function boss_destroy(argument0) //boss_destroy_gml_Object_par_boss_Create_0
 {
     SUPER_boss_destroy(argument0)
 }
 
-function player_hurt_gml_Object_par_boss_Create_0(argument0, argument1) //player_hurt_gml_Object_par_boss_Create_0
+function player_hurt(argument0, argument1) //player_hurt_gml_Object_par_boss_Create_0
 {
     SUPER_player_hurt(argument0, argument1)
 }
 
-function boss_hurt_gml_Object_par_boss_Create_0(argument0, argument1) //boss_hurt_gml_Object_par_boss_Create_0
+function boss_hurt(argument0, argument1) //boss_hurt_gml_Object_par_boss_Create_0
 {
     SUPER_boss_hurt(argument0, argument1)
 }
 
-function boss_hurt_noplayer_gml_Object_par_boss_Create_0(argument0) //boss_hurt_noplayer_gml_Object_par_boss_Create_0
+function boss_hurt_noplayer(argument0) //boss_hurt_noplayer_gml_Object_par_boss_Create_0
 {
     SUPER_boss_hurt_noplayer(argument0)
 }

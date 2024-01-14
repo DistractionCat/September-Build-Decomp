@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Graveyard",
+    "path": "folders/Objects/Level Gimmicks/Graveyard.yy",
   },
   "parentObjectId": null,
   "persistent": false,

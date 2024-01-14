@@ -58,7 +58,7 @@ targetstunnedminus[3] = 30
 targetstunnedminus[4] = 30
 targetstunnedminus[5] = 30
 targetstunnedminus[6] = 30
-function boss_destroy_gml_Object_obj_mrstickboss_Create_0(argument0) //boss_destroy_gml_Object_obj_mrstickboss_Create_0
+function boss_destroy(argument0) //boss_destroy_gml_Object_obj_mrstickboss_Create_0
 {
     SUPER_boss_destroy(argument0)
     targetstunned = 1000
@@ -67,7 +67,7 @@ function boss_destroy_gml_Object_obj_mrstickboss_Create_0(argument0) //boss_dest
     quick_ini_write_real(get_savefile_ini(), "cutscene", "mrstick3", 1)
 }
 
-function boss_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) //boss_hurt_gml_Object_obj_mrstickboss_Create_0
+function boss_hurt(argument0, argument1) //boss_hurt_gml_Object_obj_mrstickboss_Create_0
 {
     if (targetstunned > 0)
     {
@@ -82,7 +82,7 @@ function boss_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) //b
     targetxscale = (-argument1.xscale)
 }
 
-function boss_hurt_noplayer_gml_Object_obj_mrstickboss_Create_0(argument0) //boss_hurt_noplayer_gml_Object_obj_mrstickboss_Create_0
+function boss_hurt_noplayer(argument0) //boss_hurt_noplayer_gml_Object_obj_mrstickboss_Create_0
 {
     if (targetstunned > 0)
     {
@@ -96,7 +96,7 @@ function boss_hurt_noplayer_gml_Object_obj_mrstickboss_Create_0(argument0) //bos
     SUPER_boss_hurt_noplayer(argument0)
 }
 
-function player_hurt_gml_Object_obj_mrstickboss_Create_0(argument0, argument1) //player_hurt_gml_Object_obj_mrstickboss_Create_0
+function player_hurt(argument0, argument1) //player_hurt_gml_Object_obj_mrstickboss_Create_0
 {
     if ((!argument1.inv_frames) && (argument1.state != states.backbreaker || argument1.parry_inst == -4))
     {

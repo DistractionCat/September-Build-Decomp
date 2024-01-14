@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Sewer",
+    "path": "folders/Objects/Level Gimmicks/Sewer.yy",
   },
   "parentObjectId": {
     "name": "obj_tubeexitmach",
