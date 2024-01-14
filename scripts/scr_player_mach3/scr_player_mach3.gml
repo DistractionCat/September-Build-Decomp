@@ -19,8 +19,6 @@ function scr_player_mach3() //scr_player_mach3
                 if (movespeed < 12)
                     movespeed += 0.1
             }
-            if (move == xscale && grounded && movespeed < 20)
-                movespeed += 0.025
             mach2 = 100
             momemtum = 1
             move = (key_right + key_left)

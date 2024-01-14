@@ -13,13 +13,14 @@ function scr_player_tumble() //scr_player_tumble
         movespeed = 6
     if (grounded && sprite_index != spr_tumble)
         movespeed -= 0.05
-    if (key_down2 && (sprite_index == spr_mach2jump || sprite_index == spr_machroll))
+    /*if (key_down2 && (sprite_index == spr_mach2jump || sprite_index == spr_machroll))
     {
         sprite_index = spr_bodyslamstart
         image_index = 0
         state = states.freefallprep
         vsp = (character == "P" ? -5 : -7)
     }
+	*/
     if (key_attack2 && grounded && sprite_index != spr_tumble && (!(scr_solid(x, (y - 16)))) && (!(scr_solid(x, (y - 32)))) && sprite_index != spr_player_breakdance)
     {
         with (instance_create(x, y, obj_jumpdust))

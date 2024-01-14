@@ -61,8 +61,8 @@ function scr_player_handstandjump() //scr_player_handstandjump
         vsp = -11
         if (movespeed < 10)
             movespeed = 10
-        state = states.tumble
-        sprite_index = spr_mach2jump
+        state = states.mach2
+        sprite_index = spr_player_longjump
     }
     if (grounded && sprite_index == airattackdash && ((!key_attack) || character == "N") && global.attackstyle != 2)
     {

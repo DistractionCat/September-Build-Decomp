@@ -121,6 +121,8 @@ function scr_player_mach2() //scr_player_mach2
         sprite_index = spr_secondjump2
     if (floor(image_index) == (image_number - 1) && sprite_index == spr_walljumpstart)
         sprite_index = spr_walljumpend
+    if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_longjump)
+        image_speed = 0
     if ((!grounded) && sprite_index != spr_clownfall && sprite_index == spr_clownjump && floor(image_index) == (image_number - 1))
         sprite_index = spr_clownfall
     if (key_down && (!(place_meeting(x, y, obj_dashpad))))
