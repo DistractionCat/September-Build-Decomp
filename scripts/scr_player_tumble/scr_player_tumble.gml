@@ -13,14 +13,13 @@ function scr_player_tumble() //scr_player_tumble
         movespeed = 6
     if (grounded && sprite_index != spr_tumble)
         movespeed -= 0.05
-    /*if (key_down2 && (sprite_index == spr_mach2jump || sprite_index == spr_machroll))
+    if (key_jump2 && (sprite_index == spr_player_mach2jump || sprite_index == spr_dive))
     {
-        sprite_index = spr_bodyslamstart
+        sprite_index = spr_player_poundcancel1
         image_index = 0
-        state = states.freefallprep
-        vsp = (character == "P" ? -5 : -7)
+        state = states.freefall
+		vsp = -6
     }
-	*/
     if (key_attack2 && grounded && sprite_index != spr_tumble && (!(scr_solid(x, (y - 16)))) && (!(scr_solid(x, (y - 32)))) && sprite_index != spr_player_breakdance)
     {
         with (instance_create(x, y, obj_jumpdust))
@@ -43,7 +42,7 @@ function scr_player_tumble() //scr_player_tumble
 	    sprite_index = spr_player_backslideland
 	    image_index = 0
 	}
-    if (sprite_index == spr_dive && grounded)
+    if ((sprite_index == spr_player_mach2jump || sprite_index == spr_dive) && grounded)
         sprite_index = spr_player_machroll
     if (sprite_index == spr_crouchslip && (!grounded))
         sprite_index = spr_player_jumpdive2

@@ -89,6 +89,17 @@ function scr_player_mach3() //scr_player_mach3
                     other.crazyruneffectid = id
                 }
             }
+			if key_slap2
+			{
+			    suplexmove = 1
+				sprite_index = spr_suplexdash
+			    suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+			    state = states.handstandjump
+			    if (movespeed < 5)
+			        movespeed = 5
+			    image_index = 0
+			    flash = 1
+			}
             if (sprite_index == spr_mach4 || sprite_index == spr_fightball)
                 image_speed = 0.4
             else if (sprite_index == spr_crazyrun)
@@ -134,7 +145,7 @@ function scr_player_mach3() //scr_player_mach3
                 state = states.tumble
                 vsp = 10
                 if (!grounded)
-                    sprite_index = spr_player_dive
+                    sprite_index = spr_player_mach2jump
                 else
                     sprite_index = spr_player_machroll
                 if (character == "V")

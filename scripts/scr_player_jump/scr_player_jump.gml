@@ -220,7 +220,7 @@ function state_player_jump() //state_player_jump
             sprite_index = spr_player_mach2jump
             image_index = 0
             state = states.freefall
-            vsp = (character == "P" ? -5 : -7)
+            vsp = 0
         }
         else
         {

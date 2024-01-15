@@ -3230,6 +3230,7 @@
     {"id":{"name":"spr_balloonpop","path":"sprites/spr_balloonpop/spr_balloonpop.yy",},},
     {"id":{"name":"spr_ancho_rage2","path":"sprites/spr_ancho_rage2/spr_ancho_rage2.yy",},},
     {"id":{"name":"spr_impact","path":"sprites/spr_impact/spr_impact.yy",},},
+    {"id":{"name":"spr_player_poundcancel1","path":"sprites/spr_player_poundcancel1/spr_player_poundcancel1.yy",},},
     {"id":{"name":"spr_keyparticles","path":"sprites/spr_keyparticles/spr_keyparticles.yy",},},
     {"id":{"name":"spr_superdashcloud","path":"sprites/spr_superdashcloud/spr_superdashcloud.yy",},},
     {"id":{"name":"spr_bulletdisappear","path":"sprites/spr_bulletdisappear/spr_bulletdisappear.yy",},},
