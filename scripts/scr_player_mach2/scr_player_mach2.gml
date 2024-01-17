@@ -93,7 +93,9 @@ function scr_player_mach2() //scr_player_mach2
         input_buffer_jump = 0
     if (grounded && (place_meeting((x + sign(hsp)), (y - 16), obj_solid) || scr_solid_slope((x + sign(hsp)), (y - 16))) && (!(place_meeting((x + hsp), y, obj_destructibles))) && (!(place_meeting((x + hsp), y, obj_metalblock))) && place_meeting(x, (y + 1), obj_slope))
     {
-        wallspeed = movespeed
+		wallspeed = movespeed
+		if (vsp > 0)
+            wallspeed -= vsp
         state = states.climbwall
     }
     if ((!grounded) && place_meeting((x + sign(hsp)), y, obj_solid) && (!(place_meeting((x + sign(hsp)), y, obj_destructibles))) && (!(place_meeting((x + sign(hsp)), y, obj_metalblock))))

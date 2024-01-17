@@ -798,6 +798,7 @@
     {"id":{"name":"door_trigger4","path":"objects/door_trigger4/door_trigger4.yy",},},
     {"id":{"name":"door_trigger5","path":"objects/door_trigger5/door_trigger5.yy",},},
     {"id":{"name":"door_trigger6","path":"objects/door_trigger6/door_trigger6.yy",},},
+    {"id":{"name":"spr_player_clingwall","path":"sprites/spr_player_clingwall/spr_player_clingwall.yy",},},
     {"id":{"name":"door_trigger7","path":"objects/door_trigger7/door_trigger7.yy",},},
     {"id":{"name":"door_trigger8","path":"objects/door_trigger8/door_trigger8.yy",},},
     {"id":{"name":"door_trigger9","path":"objects/door_trigger9/door_trigger9.yy",},},

@@ -11,6 +11,10 @@ function scr_player_climbwall() //scr_player_climbwall
             if (wallspeed < 24 && move == xscale)
                 wallspeed += 0.1
             crouchslideAnim = 1
+            if (vsp < -5)
+                sprite_index = spr_machclimbwall
+            else
+                sprite_index = spr_player_clingwall
             sprite_index = ((!skateboarding) ? spr_machclimbwall : spr_clownwallclimb)
             if ((!key_attack) && (!skateboarding))
             {

@@ -105,6 +105,7 @@ function scr_player_handstandjump() //scr_player_handstandjump
         sprite_index = spr_crouchslip
         image_index = 0
         machhitAnim = 0
+		movespeed = 14
         state = states.tumble
     }
     if (scr_solid((x + xscale), y) && ((!(place_meeting((x + sign(hsp)), y, obj_slope))) || scr_solid_slope((x + sign(hsp)), y)) && (!(place_meeting((x + xscale), y, obj_destructibles))))
